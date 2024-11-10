@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
     return (
         <section className="heroSection">
@@ -9,7 +11,7 @@ export default function Hero() {
                 <button className="heroButton">Order Now</button>
             </div>
             <div className="heroImage">
-                <img src="/burger-fries.png" alt="Burger and Fries" />
+                <Image src="/burger-fries.png" alt="Burger and Fries" width={300} height={300}/>
             </div>
         </section>
     );

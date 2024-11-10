@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Menu() {
@@ -66,7 +67,7 @@ export default function Menu() {
       <div className="menu-items">
         {menuItems.map((item) => (
           <div key={item.id} className="menu-item">
-            <img className="menu-item-image" src={item.image} alt={item.name} />
+            <Image className="menu-item-image" src={item.image} alt={item.name} width={300} height={300} />
             <div className="menu-item-details">
               <h3 className="menu-item-name">{item.name}</h3>
               <p className="menu-item-description">{item.description}</p>
